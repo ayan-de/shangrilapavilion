@@ -88,11 +88,35 @@ export default function Home() {
             </p>
           </section>
 
-          <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">About Us</h2>
-            <p className="text-lg md:text-xl max-w-3xl leading-relaxed">
-              Discover our story and the passion that drives us to create unforgettable moments.
-            </p>
+          <section id="about" className="min-h-screen flex flex-col md:flex-row items-center justify-center px-8 md:px-16 gap-12 py-20 bg-black/40 backdrop-blur-sm">
+            {/* Left Side - Image */}
+            <div className="w-full md:w-1/2 relative h-[300px] md:h-[500px] rounded-2xl overflow-hidden border border-[#BF953F]/30 shadow-2xl shadow-[#BF953F]/10">
+              <Image
+                src="/about-us.png"
+                alt="About Shangri-La Pavilion"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-700"
+              />
+            </div>
+
+            {/* Right Side - Text */}
+            <div className="w-full md:w-1/2 text-left space-y-6">
+              <h2 className="text-4xl md:text-6xl font-bold text-[#BF953F]">About Us</h2>
+              <div className="space-y-4 text-lg md:text-xl text-[#FCF6BA]/90 leading-relaxed font-light">
+                <p>
+                  Welcome to <span className="text-[#FFD700] font-medium">Shangri-La Pavilion</span>, where timeless elegance meets modern luxury. Nestled in the heart of the city, our venue is a sanctuary of sophistication, designed to transform your special moments into unforgettable memories.
+                </p>
+                <p>
+                  With a passion for excellence and an eye for detail, we curate experiences that transcend the ordinary. Whether it's a grand wedding, an intimate gathering, or a corporate gala, our dedicated team ensures every aspect is executed with flawless precision and grace.
+                </p>
+                <p>
+                  Discover a world where your vision comes to life amidst breathtaking architecture and unparalleled service.
+                </p>
+              </div>
+              <button className="mt-8 px-8 py-3 border border-[#BF953F] text-[#BF953F] hover:bg-[#BF953F] hover:text-black transition-all duration-300 uppercase tracking-widest text-sm font-semibold">
+                Read More
+              </button>
+            </div>
           </section>
 
           <section id="gallery" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
