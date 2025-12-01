@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
   return (
@@ -132,12 +133,7 @@ export default function Home() {
             </p>
           </section>
 
-          <section id="contact" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">Contact Us</h2>
-            <p className="text-lg md:text-xl">
-              Get in touch with us today.
-            </p>
-          </section>
+          <ContactUs />
         </main>
 
         {/* Footer */}
