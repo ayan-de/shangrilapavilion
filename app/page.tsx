@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Gallery from "./components/Gallery";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -119,19 +121,9 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="gallery" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">Gallery</h2>
-            <p className="text-lg md:text-xl">
-              Explore our visual journey.
-            </p>
-          </section>
+          <Gallery />
 
-          <section id="services" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">Services</h2>
-            <p className="text-lg md:text-xl">
-              Tailored services to meet your every need.
-            </p>
-          </section>
+          <Services />
 
           <section id="testimonial" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
             <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">Testimonials</h2>
