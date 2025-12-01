@@ -2,6 +2,7 @@ import Image from "next/image";
 import Gallery from "./components/Gallery";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
@@ -126,12 +127,7 @@ export default function Home() {
 
           <Services />
 
-          <section id="testimonial" className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#BF953F]">Testimonials</h2>
-            <p className="text-lg md:text-xl">
-              What our guests say about us.
-            </p>
-          </section>
+          <Testimonials />
 
           <ContactUs />
         </main>
